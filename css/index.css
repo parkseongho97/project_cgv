@@ -23,8 +23,11 @@ img {
 #section .slide img {
   width: 100%;
 }
+#section .slide2 img {
+  width: 100%;
+}
 .row {
-  max-width: 1289px;
+  max-width: 1499px;
   border: 0px solid #fff;
   margin: 0 auto;
 }
@@ -75,16 +78,12 @@ img {
 }
 #header h1 a {
   width: 125px;
-  height: 350px;
+  height: 63px;
   display: flex;
   align-items: center;
   background: url(../img/logo.png) no-repeat;
 }
 #header h1 a:hover {
-  width: 250px;
-  height: auto;
-  display: flex;
-  align-items: center;
   background: url(../img/logo_hover.png) no-repeat;
 }
 #header .nav {
@@ -473,7 +472,7 @@ img {
 
 #section .cgvText {
   text-align: center;
-  padding: 10px 0 40px;
+  padding: 10px 0 20px;
 }
 #section .cgvText h2 {
   font-size: 60px;
@@ -611,8 +610,8 @@ img {
 }
 
 #section .textbox2 img {
-  width: 50%;
-  height: 50%;
+  width: 40%;
+  height: 40%;
   margin: 0 auto;
 }
 
@@ -679,12 +678,12 @@ img {
 }
 #section .eventText {
   color: white;
-  padding: 30px 0px 0 0;
+  padding: 50px 0px 50px 0;
 }
 #section .eventText h3 {
   font-size: 60px;
   font-weight: bold;
-  color: #ed3124;
+  color: #333;
 }
 #section .eventText p {
   font-size: 30px;
@@ -696,7 +695,7 @@ img {
   text-align: center;
   display: flex;
   margin: 0 auto;
-  padding: 50px 10px;
+  padding: 0px 10px 50px;
 }
 #section .event .eventImage {
   position: relative;
@@ -704,7 +703,7 @@ img {
 }
 #section .event li {
   flex: 1 0 33.333%;
-  padding: 0 10px;
+  padding: 10px 10px;
   position: relative;
 }
 
@@ -745,10 +744,11 @@ img {
   color: #252525;
   font-size: 35px;
   padding-top: 20px;
+  font-weight: 500;
 }
 #section .event li p {
-  color: #333;
-  font-size: 25px;
+  color: #8c8c8c;
+  font-size: 20px;
 }
 #section .event li div.price {
   display: flex;
@@ -783,6 +783,88 @@ img {
   right: 30px;
 }
 
+/* enjoy 영역 */
+
+#section .enjoy {
+  text-align: center;
+  align-items: center;
+  color: #333;
+  background: #ed3124;
+  padding: 30px 0;
+}
+#section .enjoyText {
+  text-align: center;
+}
+
+#section .enjoyText h2 {
+  color: #fff;
+  font-size: 60px;
+}
+#section .enjoyText p {
+  font-size: 25px;
+  color: #fff;
+}
+#section .enjoy .ej {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+#section .enjoy .ej li {
+  flex: 1 0 25%;
+  padding: 20px 25px;
+}
+
+#section .enjoy .ej li h3 {
+  color: white;
+  font-weight: 600;
+  font-size: 35px;
+}
+#section .enjoy .ej li p {
+  color: white;
+  font-size: 18px;
+}
+#section .enjoy .ej li a {
+  display: inline-block;
+  margin-top: 15px;
+  color: white;
+  border: 1px solid #fff;
+  font-size: 18px;
+  padding: 10px 25px;
+  transition: all 0.2s;
+  word-break: keep-all;
+  border-radius: 3px;
+}
+#section .enjoy .ej li a:hover {
+  color: #ed3124;
+  border: 1px solid #fff;
+  background: #fff;
+  font-weight: bold;
+  padding: 10px 100px;
+}
+#section .enjoy .ej li span {
+  font-size: 50px;
+  color: #af0b00;
+  border-bottom: 3px solid rgba(175, 11, 0, 0.4);
+}
+
+#section .enjoy .ej li .enjoyIcBox {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: #fff;
+  margin: 0 auto;
+  border-radius: 20px;
+  margin-top: 15px;
+}
+#section .enjoy .ej li .enjoyIcBox img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0auto;
+}
+
+/* 푸터영역 */
 #footer {
   height: 150px;
   background: #333;

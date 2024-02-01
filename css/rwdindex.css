@@ -1,14 +1,14 @@
 /* cgv profect 반응형 */
-@media screen and (max-wdith: 1289px) {
+@media screen and (max-wdith: 1499px) {
   .row {
-    max-width: 1289px;
+    max-width: 1499px;
     border: 0px solid #333;
     margin: 0 auto;
     padding: 0 10px;
   }
 }
 
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 1199px) {
   /* 헤더영역 */
   #header {
     background: #fff;
@@ -171,7 +171,7 @@
 
   /* 무비차트 영역 */
   #section .textarea {
-    padding: 30px 0 30px;
+    padding: 50px 0 10px;
   }
   #section .textarea h2 {
     color: #1f1f1f;
@@ -192,31 +192,31 @@
     padding-top: 20px;
   }
   #section .row {
-    display: flex;
+    display: block;
     position: relative;
     width: 100%;
   }
   #section .row li {
+    width: 60%;
     text-align: center;
-    margin: 0px 10px;
-    flex: 1 0 1 50%;
+    margin: 50px auto;
   }
   #section .row h2 {
     font-size: 45px;
   }
   #section .row h3 {
-    font-size: 23px;
+    font-size: 45px;
     color: #242424;
     padding-top: 20px;
     font-weight: 800;
   }
   #section .row .image .hover h2 {
-    font-size: 15px;
+    font-size: 35px;
     text-align: center;
     font-weight: normal;
   }
   #section .row .image .hover h1 {
-    font-size: 15;
+    font-size: 50px;
     font-weight: lighter;
   }
 
@@ -224,41 +224,52 @@
     background: rgba(130, 0, 0, 0.6);
     position: absolute;
     z-index: 999;
-    width: 30px;
-    height: 50px;
+    width: 100px;
+    height: 120px;
     transition: all 0.3s;
   }
   #section .row .box h3 {
     color: #fff;
     text-align: center;
-    line-height: 10px;
-    font-size: 30px;
+    line-height: 60px;
+    font-size: 50px;
   }
 
   #section .textbox .number {
     position: absolute;
-    top: 25px;
+    top: 30px;
     left: 0;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 37px;
     font-weight: bold;
   }
   #section .textbox .n3 {
     background: rgba(0, 174, 59, 1);
-    font-size: 16px;
+    font-size: 26px;
   }
 
   #section .textbox a {
     color: #ed3124;
     border: 1px solid;
     display: inline-block;
-    padding: 5px 20px;
+    padding: 15px 20px;
     font-size: 20px;
     margin-top: 5px;
     font-weight: normal;
     border-radius: 3px;
+    transition: all 0.3s;
+  }
+  #section .textbox a:hover {
+    background: #ed3124;
+    color: white;
+    transition: all 0.3s;
+    border-radius: 3px;
+    padding: 15px 55px;
+    transition: all 0.3s;
+
+    font-weight: normal;
   }
 
   /* cgv픽 */
@@ -283,6 +294,11 @@
     width: 100%;
     height: auto;
   }
+  #section .moviechart {
+    margin-bottom: 10px;
+    padding-bottom: 50px;
+    background: #fbfbfb;
+  }
   #section .cgv .movieText {
     flex: 1;
     text-align: center;
@@ -293,6 +309,40 @@
     transition: all 0.3s;
     overflow: hidden;
   }
+  #section .cgv .movieText h3 {
+    font-size: 40px;
+    color: #242424;
+    padding-top: 20px;
+    font-weight: normal;
+  }
+
+  #section .cgv .movieText p.text {
+    font-size: 15px;
+    line-height: 30px;
+    padding: 25px;
+    color: #333;
+    word-break: keep-all;
+  }
+  #section .cgv .movieText a {
+    color: #ed3124;
+    border: 1px solid #ed3124;
+    padding: 10px 40px;
+    transition: all 0.2s;
+    border-radius: 3px;
+    font-size: 20px;
+    display: inline-block;
+    transition: all 0.3s;
+  }
+  #section .cgv .movieText a:hover {
+    color: white;
+    border: 1px solid #ed3124;
+    padding: 10px 80px;
+    transition: all 0.2s;
+    border-radius: 3px;
+    font-size: 20px;
+    display: inline-block;
+    transition: all 0.3s;
+  }
   #section .cgv .m1 {
     background: url(../img/movie01.jpg) no-repeat center/cover;
   }
@@ -302,4 +352,72 @@
   #section .cgv .m3 {
     background: url(../img/movie03.jpg) no-repeat center/cover;
   }
+  #section .cgv .movieText p.mo1 {
+    width: 120px;
+    margin: 0 auto;
+    font-size: 18px;
+    margin-top: 45px;
+    color: rgba(30, 149, 0, 1);
+    border: 1px solid rgba(30, 149, 0, 1);
+  }
+  #section .cgv .movieText p.mo2 {
+    width: 120px;
+    margin: 0 auto;
+    font-size: 18px;
+    margin-top: 45px;
+
+    color: #3693ff;
+    border: 1px solid #3693ff;
+  }
+  #section .cgv .movieText p.mo3 {
+    width: 120px;
+    margin: 0 auto;
+    margin-top: 45px;
+
+    font-size: 18px;
+    color: rgba(30, 149, 0, 1);
+    border: 1px solid rgba(30, 149, 0, 1);
+  }
+
+  /* 슬라이드2 구역 */
+  #section .slide2 img {
+    width: 100%;
+    height: 500px;
+  }
+  #section .slideOuter2 .slideInner2 {
+    position: relative;
+  }
+  #section .slideOuter2 .slideInner2 .slide2 {
+    position: relative;
+  }
+  #section .slide2 .textbox2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  #section .slide2 .textbox2 h2 {
+    font-size: 60px;
+    padding: 0px;
+  }
+  #section .slide2 .textbox2 h3 {
+    font-size: 20px;
+    font-weight: lighter;
+    opacity: 90%;
+  }
+
+  #section .slide2 .textbox2 p {
+    font-size: 12px;
+    word-break: keep-all;
+    padding: 30px 0;
+  }
+
+  #section .textbox2 img {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+  }
+
+  /* 이벤트리스트 영역 */
 }
