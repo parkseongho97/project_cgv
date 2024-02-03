@@ -420,4 +420,73 @@
   }
 
   /* 이벤트리스트 영역 */
+
+  #section .eventText {
+    color: white;
+    padding: 30px 0px 30px 0;
+  }
+ 
+  #section .event li h2 {
+    color: #252525;
+    font-size: 25px;
+    padding-top: 20px;
+    font-weight: 600;
+  }
+  #section .event li p {
+    color: #8c8c8c;
+    font-size: 15px;
+  }
+
+  /* enjoy영역 */
+
+
+#section .enjoy .ej {
+  margin: 0 auto;
+  display: block;
+  justify-content: center;
+}
+#section .enjoy .ej li {
+  padding: 20px 25px;
+}
+#section .enjoy .ej li h3 {
+  color: white;
+  font-weight: 600;
+  font-size: 45px;
+}
+#section .enjoy .ej li p {
+  color: white;
+  font-size: 25px;
+}
+#section .enjoy .ej li a {
+  display: inline-block;
+  margin-top: 15px;
+  color: white;
+  border: 1px solid #fff;
+  font-size: 20px;
+  padding: 10px 35px;
+  transition: all 0.2s;
+  word-break: keep-all;
+  border-radius: 3px;
+}
+#section .enjoy .ej li a:hover {
+  color: #ed3124;
+  border: 1px solid #fff;
+  background: #fff;
+  font-weight: bold;
+  padding: 10px 130px;
+}
+#section .enjoy .ej li span {
+  font-size: 80px;
+  color: #af0b00;
+  border-bottom: 3px solid rgba(175, 11, 0, 0.4);
+}
+#section .enjoy .ej li .enjoyIcBox {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  background: #fff;
+  margin: 0 auto;
+  border-radius: 20px;
+  margin-top: 25px;
+}
 }

@@ -27,7 +27,7 @@ img {
   width: 100%;
 }
 .row {
-  max-width: 1499px;
+  max-width: 1200px;
   border: 0px solid #fff;
   margin: 0 auto;
 }
@@ -176,6 +176,7 @@ img {
 #header .info a .ic1:hover {
   background: url(../img/info01_hover.png) no-repeat center / cover;
 }
+
 #header .info a .ic2:hover {
   background: url(../img/info02_hover.png) no-repeat center / cover;
 }
@@ -767,12 +768,17 @@ img {
 }
 #section .eventList .event button.slick-arrow {
   position: absolute;
-  top: 35%;
+  top: 27%;
+  color: #333;
   font-size: 40px;
   background: none;
+  border-radius: 100%;
   border: none;
   display: block;
   cursor: pointer;
+}
+#section .eventList i{
+  color: #5e5e5e;
 }
 
 #section .eventList .event button.slick-prev {
@@ -862,6 +868,54 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0auto;
+}
+
+#section .infolist{
+  height: auto;
+  background: #B6241A;
+
+}
+#section .infolist .listUp{
+  display: flex;
+  height: auto;
+  justify-content: center;
+  background: #B6241A;
+
+}
+#section .infolist ul{
+  display: flex;
+  text-align: center;
+  width: 100%;
+ 
+  vertical-align: middle;
+
+
+}
+#section .infolist ul li{
+  flex: 1 0 20%;
+  padding: 70px 0;
+  transition: all 0.4s;
+
+
+}
+#section .infolist ul li h2{
+  font-size: 70px;
+  padding-bottom: 15px;
+}
+#section .infolist ul li:hover{
+  background: #fff;
+
+}
+#section .infolist ul li:hover i{
+  color: #B6241A;
+}
+#section .infolist ul li:hover h3{
+  color: #B6241A;
+}
+#section .infolist ul li h3{
+  word-break: keep-all;
+  font-size: 25px;
+  font-weight: 500;
 }
 
 /* 푸터영역 */
