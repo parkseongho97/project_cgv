@@ -422,6 +422,7 @@
           </div>
         </div>
       </div>
+
       <div class="eventList">
         <div class="eventText">
           <h3>Event Store</h3>
@@ -509,6 +510,19 @@
           </li>
         </ul>
       </div>
+      <div class="popup">
+        <div class="poptext">
+          <h2>이거야</h2>
+          <p>아니야?</p>
+        </div>
+        <ul class="pop row">
+          <li>
+            <img src="./img/imgpopup01.PNG" alt="" />
+            <h3>이거맞냐고</h3>
+          </li>
+          <li>2</li>
+        </ul>
+      </div>
       <div class="enjoy">
         <div class="enjoyText">
           <h2>CGV</h2>
@@ -565,106 +579,43 @@
       </div>
       <div class="infolist">
         <div class="listUp">
-        <ul row>
-          <li>
-            <a href="#">
-            <h2><i class="fa-solid fa-magnifying-glass"></i></h2>
-          </a>
-          <h3>상영관 찾기</h3>
-          </li>
-          <li>
-            <a href="#">
-            <h2><i class="fa-solid fa-gift"></i></h2>
-          </a>
-          <h3>이벤트</h3>
-          </li>
-          <li>
-            <a href="#">
-            <h2><i class="fa-solid fa-credit-card"></i></h2>
-          </a>
-          <h3>카드할인</h3>
-          </li>
-          <li>
-            <a href="#">
-            <h2><i class="fa-solid fa-id-card-clip"></i></h2>
-          </a>
-          <h3>멤버십</h3>
-          </li>
-          <li>
-            <a href="#">
-            <h2><i class="fa-solid fa-shop"></i></h2>
-          </a>
-          <h3>스토어</h3>
-          </li>
-        </ul>
-      </div>
+          <ul row>
+            <li>
+              <a href="#">
+                <h2><i class="fa-solid fa-magnifying-glass"></i></h2>
+              </a>
+              <h3>상영관 찾기</h3>
+            </li>
+            <li>
+              <a href="#">
+                <h2><i class="fa-solid fa-gift"></i></h2>
+              </a>
+              <h3>이벤트</h3>
+            </li>
+            <li>
+              <a href="#">
+                <h2><i class="fa-solid fa-credit-card"></i></h2>
+              </a>
+              <h3>카드할인</h3>
+            </li>
+            <li>
+              <a href="#">
+                <h2><i class="fa-solid fa-id-card-clip"></i></h2>
+              </a>
+              <h3>멤버십</h3>
+            </li>
+            <li>
+              <a href="#">
+                <h2><i class="fa-solid fa-shop"></i></h2>
+              </a>
+              <h3>스토어</h3>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
     <div id="footer"></div>
-    <script>
-      $(".slideInner").slick({
-        autoplay: 4000,
-        dots: true,
-        arrows: false,
-      });
 
-      $(".slideOuter .plapau i").on("click", function () {
-        if ($(this).hasClass("fa-pause")) {
-          $(".slideInner").slick("slickPause");
-          $(this).removeClass("fa-pause").addClass("fa-play");
-        } else {
-          $(".slideInner").slick("slickPlay");
-          $(this).removeClass("fa-play").addClass("fa-pause");
-        }
-      });
-
-      $(".slideInner2").slick({
-        autoplay: 4000,
-        dots: true,
-        arrows: false,
-      });
-
-      $(".slideOuter2 .plapau i").on("click", function () {
-        if ($(this).hasClass("fa-pause")) {
-          $(".slideInner2").slick("slickPause");
-          $(this).removeClass("fa-pause").addClass("fa-play");
-        } else {
-          $(".slideInner2").slick("slickPlay");
-          $(this).removeClass("fa-play").addClass("fa-pause");
-        }
-      });
-
-      $(".event").slick({
-        autoplay: true,
-        autoplaySpeed: 2000,
-        centerMode: true,
-        centerPadding: "50px",
-        slidesToShow: 3,
-        prevArrow:
-          '<button class="slick-prev slick-arrow" aria-label="previous" type="button"><i class="fa-solid fa-chevron-left"></button>',
-        nextArrow:
-          '<button class="slick-next slick-arrow" aria-label="Next" type="button"><i class="fa-solid fa-chevron-right"></i></button>',
-        responsive: [
-          {
-            breakpoint: 768,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: "40px",
-              slidesToShow: 1,
-            },
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: "40px",
-              slidesToShow: 1,
-            },
-          },
-        ],
-      });
-    </script>
+    <script src="./js/myscript.js"></script>
   </body>
 </html>
