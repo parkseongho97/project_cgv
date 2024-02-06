@@ -81,9 +81,17 @@ $("#header ul li").on("mouseover mouseout", function () {
     $(this).toggleClass("on");
   }
 });
+
 $(".nav .depth1 li > a").on("mouseover mouseout", function () {
   if ($("html").hasClass("pc")) {
     $(this).toggleClass("on");
+  }
+});
+$(".nav .depth1 > li").on("click", function () {
+  if ($("html").hasClass("mobile")) {
+    $(this).toggleClass("on");
+    $(this).find(".depth2").stop().slideToggle(200);
+    $(this).siblings().find(".depth2").slideUp("on");
   }
 });
 $(".info a .icon").on("mouseover mouseout", function () {
@@ -94,9 +102,7 @@ $(".info a .icon").on("mouseover mouseout", function () {
 
 //슬라이드 오버 영역
 $("#section a").on("mouseover mouseout", function () {
-  if ($("html").hasClass("pc")) {
-    $(this).toggleClass("on");
-  }
+  $(this).toggleClass("on");
 });
 $("#section ul li").on("mouseover mouseout", function () {
   if ($("html").hasClass("pc")) {
@@ -115,7 +121,7 @@ $(".nav .depth1 > li").on("click", function () {
 
 // 햄버거 버튼
 $("#header .menuopen").on("click", function () {
-  $(this).next().stop().slideToggle(300);
+  $(this).next().stop().slideToggle(200);
 });
 
 $("#section .event li a dem").on("mouseover mouseout", function () {

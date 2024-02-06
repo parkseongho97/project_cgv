@@ -107,7 +107,7 @@ img {
   font-weight: 600;
   padding: 0 30px;
   position: relative;
-  border-bottom: 0px solid #ed3124;
+  border-bottom: 0px solid transparent;
 }
 #header .nav .depth1 > li.on {
   color: #fff;
@@ -143,13 +143,13 @@ img {
 #header .nav .depth2 > li > a.on .depth1 a {
   color: #ed3124;
 }
-#header .nav .depth2 > li > a.on {
+/* #header .nav .depth2 > li > a.on {
   color: #ed3124;
   font-weight: bold;
-}
-#header .nav .depth1 > li.on .depth2 {
+} */
+/* #header .nav .depth1 > li.on .depth2 {
   display: block;
-}
+} */
 
 #header .info {
   display: flex;
