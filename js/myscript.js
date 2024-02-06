@@ -109,22 +109,28 @@ $("#section .cgv .movie").on("mouseover mouseout", function () {
   }
 });
 
-// $(".nav .depth1 > li").on("click", function () {
-//   $(this).hasClass("mobile");
-// });
+$(".nav .depth1 > li").on("click", function () {
+  $(this).hasClass("mobile");
+});
 
 // 햄버거 버튼
-// $("#header .menuopen").on("click", function () {
-//   $(this).next().stop().slideToggle(300);
-// });
+$("#header .menuopen").on("click", function () {
+  $(this).next().stop().slideToggle(300);
+});
 
-// $("#section .event li a dem").on("mouseover mouseout", function () {
-//   if ($("html").hasClass("pc")) {
-//     $(this).toggleClass("on");
-//   }
-// });
-// $("#section .infolist ul li").on("mouseover mouseout", function () {
-//   if ($("html").hasClass("pc")) {
-//     $(this).toggleClass("on");
-//   }
-// });
+$("#section .event li a dem").on("mouseover mouseout", function () {
+  if ($("html").hasClass("pc")) {
+    $(this).toggleClass("on");
+  }
+});
+
+$("#section .infolist > ul > li").on("mouseover mouseout", function () {
+  if ($("html").hasClass("pc")) {
+    $(this).toggleClass("on");
+  }
+});
+$("#section .infolist > ul > li").on("mouseover mouseout", function () {
+  if ($("html").hasClass("mobile")) {
+    $(this).toggleClass("on");
+  }
+});
