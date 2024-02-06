@@ -55,9 +55,11 @@
   #header .nav .depth1 {
     display: block;
     background: transparent;
+    
   }
   #header .nav .depth1 > li {
     display: block;
+    padding: 15px 0;
     align-items: center;
     margin: 0 auto;
     font-size: 18px;
@@ -65,6 +67,8 @@
     font-weight: 600;
     position: relative;
     transition: all 0.5s;
+    border-top: 1px solid #ebebeb;
+
   }
   #header .nav .depth1 > li > a {
     transition: all 0.3s;
@@ -103,6 +107,7 @@
     padding: 10px 20px;
     transition: all 0.2s;
     color: #333;
+    
   }
   #header .nav .depth2 > li > a:hover {
     background: #ed3124;
