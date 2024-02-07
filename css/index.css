@@ -8,8 +8,7 @@
   color: #fff;
   font-family: "Noto Sans KR", sans-serif;
 }
-body {
-}
+
 ul {
   list-style: none;
 }
@@ -115,7 +114,7 @@ img {
   align-items: center;
   display: flex;
 }
-#header .nav .depth1 > li > a.on {
+#header .nav .depth1 > li.on > a {
   color: #ed3124;
   font-weight: 800;
 }
@@ -141,13 +140,16 @@ img {
 #header .nav .depth2 > li:hover .depth1 > li > a {
   color: #ed3124;
 }
-#header .nav .depth2 > li > a.on {
+#header .nav .depth2 > li > a:hover {
   color: #ed3124;
   font-weight: bold;
 }
 /* #header .nav .depth1 > li.on .depth2 {
   display: block;
 } */
+#header .nav .depth2 > li:hover a {
+  color: #ed3124;
+}
 
 #header .info {
   display: flex;
@@ -238,7 +240,7 @@ img {
   font-weight: normal;
   border-radius: 3px;
 }
-#section .slide .text a.on {
+#section .slide .text a:hover {
   font-size: 20px;
   border: 1px solid #ed3124;
   padding: 15px 30px;
@@ -419,8 +421,9 @@ img {
   font-weight: normal;
   border-radius: 3px;
 }
-#section .textbox a.on {
+#section .textbox a:hover {
   background: #ed3124;
+
   color: white;
   transition: all 0.3s;
   border-radius: 3px;
@@ -450,7 +453,7 @@ img {
   transition: all 0.3s;
 }
 
-#section .row li a.on .demlist {
+#section .row li a:hover .demlist {
   background: #000;
   color: #fff;
   position: absolute;
@@ -460,10 +463,10 @@ img {
   display: block;
   font-size: 50px;
 }
-#section .row li a.on .box {
+#section .row li a:hover .box {
   opacity: 0;
 }
-#section .row li a.on .agebox {
+#section .row li a:hover .agebox {
   opacity: 0;
 }
 
@@ -476,7 +479,7 @@ img {
   font-size: 15px;
   display: none;
 }
-#section .row li a.on .hover {
+#section .row li a:hover .hover {
   display: block;
 }
 #section .row .image .hover h2 {
@@ -509,12 +512,11 @@ img {
   display: flex;
   padding: 40px 0;
 }
-#section .cgv img {
-}
+
 #section .cgv .movie {
   flex: 1 1;
   width: 100%;
-  transition: all 0.3s;
+  transition: all 0.2s;
   overflow: hidden;
 }
 #section .cgv .m1 {
@@ -585,7 +587,7 @@ img {
   display: inline-block;
   margin-top: 25px;
 }
-#section .cgv .movieText a.on {
+#section .cgv .movieText a:hover {
   color: #ffffff;
   border: 1px solid #ed3124;
   padding: 10px 40px;
@@ -609,7 +611,6 @@ img {
   position: absolute;
   left: 50%;
   top: 50%;
-  z-index: ;
   transform: translate(-50%, -50%);
   text-align: center;
 }
@@ -748,6 +749,33 @@ img {
   right: 30px;
 }
 
+/* 팝업박스 끝 */
+
+/* 팝업박스 영역 */
+
+#section .boxlist .boxul {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+#section .boxlist .boxul li {
+  flex: 1 1 25%;
+  text-align: center;
+  width: 100%;
+  transition: all 0.3s;
+}
+#section .boxlist .boxul li:hover {
+  scale: 1.03;
+}
+#section .photo img {
+  width: 100%;
+  height: 200px;
+  border-radius: 30px;
+}
+/* 팝업박스 끝 */
+
 /* 이벤트리스트 영역 */
 
 #section .eventList {
@@ -806,7 +834,7 @@ img {
   transition: all 0.4s;
 }
 
-#section .event li a.on .dem {
+#section .event li a:hover .dem {
   background: #ffffff;
   position: absolute;
   width: 100%;
@@ -917,12 +945,12 @@ img {
   color: white;
   border: 1px solid #fff;
   font-size: 18px;
-  padding: 10px 15px;
+  padding: 10px 35px;
   transition: all 0.2s;
   word-break: keep-all;
   border-radius: 3px;
 }
-#section .enjoy .ej li a.on {
+#section .enjoy .ej li a:hover {
   background: #fff;
   color: #ed3124;
   font-weight: bold;
@@ -1009,6 +1037,56 @@ img {
 /* 푸터영역 */
 #footer {
   height: auto;
-  padding: 30px;
-  background: #333;
+  padding: 50px;
+  background: #6e211c;
+}
+#footer .row {
+  margin: 0 auto;
+}
+
+#footer .row .footerLogo h1 a {
+  width: 125px;
+  height: 63px;
+  display: block;
+  align-items: center;
+  margin: 0 auto;
+  background: url(../img/logo.png) no-repeat;
+}
+#footer .row .footerLogo h1 a:hover {
+  width: 125px;
+  height: 63px;
+  display: block;
+  align-items: center;
+  margin: 0 auto;
+  background: url(../img/logo_hover.png) no-repeat;
+}
+
+#footer .row .footerInfo h3 {
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  font-size: 30px;
+  padding-top: 20px;
+}
+#footer .row .footerInfo h3 a {
+  padding: 5px;
+}
+#footer .row .footerInfo .fb:hover i {
+  color: #3b5998;
+}
+#footer .row .footerInfo .tw:hover i {
+  color: #00acee;
+}
+#footer .row .footerInfo .is:hover i {
+  color: #e4405f;
+}
+#footer address {
+  padding-top: 20px;
+}
+#footer span {
+  font-size: 15px;
+  line-height: 25px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }

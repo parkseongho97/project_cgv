@@ -85,65 +85,69 @@ $("#header h1 a").on("mouseover mouseout", function () {
   }
 });
 
-$("#header ul li").on("mouseover mouseout", function () {
+$("#header .nav .depth1 > li").on("mouseover mouseout", function () {
   if ($("html").hasClass("pc")) {
     $(this).toggleClass("on");
+    $(this).find(".depth2").stop().slideToggle(200);
   }
 });
 $("#section .row .agebox").on("mouseover mouseout", function () {
   $(this).toggleClass("on");
 });
 
-$(".nav .depth1 > li").on("mouseover mouseout", function () {
-  if ($("html").hasClass("pc")) {
-    $(this).toggleClass("on");
-  }
-});
+// $(".nav .depth1 li > a").on("mouseover mouseout", function () {
+//   if ($("html").hasClass("pc")) {
+//     $(this).toggleClass("on");
+//   }
+// });
 
-$(".nav .depth1 li > a").on("mouseover mouseout", function () {
-  if ($("html").hasClass("pc")) {
-    $(this).toggleClass("on");
-  }
-});
-$(".nav .depth1 > li").on("click", function () {
+$("#header .nav .depth1 > li").on("click", function () {
   if ($("html").hasClass("mobile")) {
     $(this).toggleClass("on");
+    $(this).siblings().removeClass("on");
     $(this).find(".depth2").stop().slideToggle(200);
     $(this).siblings().find(".depth2").slideUp("on");
   }
 });
 
-$(".nav .depth1 > li > a").on("click", function () {
-  if ($("html").hasClass("mobile")) {
-    $(this).stop().toggleClass("on");
-  }
-});
-$(".nav .depth1 > li").on("mouseover mouseout", function () {
-  if ($("html").hasClass("pc")) {
-    $(this).toggleClass("on");
-    $(this).find(".depth2").stop().slideToggle(200);
-  }
-});
+// $(".nav .depth1 > li > a").on("click", function () {
+//   if ($("html").hasClass("mobile")) {
+//     $(this).stop().toggleClass("on");
+//   }
+// });
+// $(".nav .depth1 > li").on("mouseover mouseout", function () {
+//   if ($("html").hasClass("pc")) {
+//     $(this).toggleClass("on");
+//     $(this).find(".depth2").stop().slideToggle(200);
+//   }
+// });
 $(".info a .icon").on("mouseover mouseout", function () {
   if ($("html").hasClass("pc")) {
     $(this).toggleClass("on");
   }
 });
 
-//슬라이드 오버 영역
-$("#section a").on("mouseover mouseout", function () {
-  $(this).toggleClass("on");
-});
-$("#section ul li").on("mouseover mouseout", function () {
-  if ($("html").hasClass("pc")) {
-    $(this).toggleClass("on");
-  }
-});
-$("#section ul li").on("click", function () {
+$("#section .boxlist .boxul > li").on("click ", function () {
   if ($("html").hasClass("mobile")) {
-    $(this).toggleClass("on");
+    $(this).stop().toggleClass("on");
   }
 });
+
+//슬라이드 오버 영역
+// $("#section a").on("mouseover mouseout", function () {
+//   $(this).toggleClass("on");
+// });
+
+// $("#section ul li").on("mouseover mouseout", function () {
+//   if ($("html").hasClass("pc")) {
+//     $(this).toggleClass("on");
+//   }
+// });
+// $("#section ul li").on("click", function () {
+//   if ($("html").hasClass("mobile")) {
+//     $(this).toggleClass("on");
+//   }
+// });
 $("#section .cgv .movie").on("mouseover mouseout", function () {
   if ($("html").hasClass("pc")) {
     $(this).toggleClass("on");
@@ -162,19 +166,20 @@ $(".nav .depth1 > li").on("click", function () {
 // 햄버거 버튼
 $("#header .menuopen").on("click", function () {
   $(this).next().stop().slideToggle(200);
+  if (!$(this).find("i").hasClass("fa-times")) {
+    $(this).find("i").removeClass("fa-bars").addClass("fa-times");
+  } else {
+    $(this).find("i").removeClass("fa-times").addClass("fa-bars");
+  }
 });
 
-$("#section .event li a dem").on("mouseover mouseout", function () {
+$("#section .infolist ul > li").on("mouseover mouseout", function () {
   if ($("html").hasClass("pc")) {
     $(this).toggleClass("on");
   }
 });
-
-// $("#section .infolist > ul > li").on("mouseover mouseout", function () {
-//   $(this).toggleClass("on");
-// });
-// $("#section .infolist > ul > li").on("mouseover mouseout", function () {
-//   if ($("html").hasClass("mobile")) {
-//     $(this).toggleClass("on");
-//   }
-// });
+$("#section .infolist > ul > li").on("click", function () {
+  if ($("html").hasClass("mobile")) {
+    $(this).toggleClass("on");
+  }
+});

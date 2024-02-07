@@ -82,7 +82,7 @@
     color: #fff;
     border-bottom: 3px solid transparent;
   }
-  #header .nav .depth1 > li > a.on {
+  #header .nav .depth1 > li.on > a {
     color: #ed3124;
   }
   /* #header .nav .depth1 > li a:hover .depth2 {
@@ -149,7 +149,7 @@
     border-radius: 3px;
     display: inline-block;
   }
-  #section .slide .text a.on {
+  #section .slide .text a:hover {
     font-size: 18px;
     border: 1px solid #ed3124;
     padding: 10px 30px;
@@ -280,19 +280,17 @@
     color: #ed3124;
     border: 1px solid;
     display: inline-block;
-    padding: 10px 20px;
     font-size: 20px;
     margin-top: 15px;
     font-weight: normal;
     border-radius: 3px;
     transition: all 0.3s;
   }
-  #section .textbox a.on {
+  #section .textbox a:hover {
     background: #ed3124;
     color: white;
     transition: all 0.3s;
     border-radius: 3px;
-    padding: 10px 55px;
     transition: all 0.3s;
 
     font-weight: normal;
@@ -580,6 +578,12 @@
     font-weight: bold;
   } */
 
+  #section .photo img {
+    width: 90%;
+    height: 150px;
+    border-radius: 30px;
+  }
+
   /* 인포리스트 영역 */
   #section .infolist ul li h2 {
     font-size: 50px;
@@ -589,6 +593,14 @@
     word-break: keep-all;
     font-size: 20px;
     font-weight: 500;
+  }
+
+  #footer span {
+    font-size: 13px;
+    line-height: 20px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
   }
 }
 
@@ -617,9 +629,9 @@
     border-radius: 3px;
     display: inline-block;
   }
-  #section .slide .text a.on {
+  #section .slide .text a:hover {
     font-size: 13px;
-    border: 1px solid #fff;
+    border: 1px solid #ed3124;
     padding: 5px 15px;
     transform: translate3d(0, 100%, 0);
     margin: 0px 10px 30px;
@@ -807,8 +819,27 @@
   #section .leftpopup .popul1 button.slick-next {
     right: 20px;
   }
+  #section .leftpopup .popul1 button.slick-arrow {
+    position: absolute;
+    top: 40%;
+    color: #ffffff;
+    font-size: 0px;
+    font-weight: lighter;
+    background: none;
+    border-radius: 100%;
+    border: none;
+    display: block;
+    cursor: pointer;
+  }
+
+  #section .photo img {
+    width: 90%;
+    height: 130px;
+    border-radius: 30px;
+  }
+
   #section .infolist ul li h2 {
-    font-size: 40px;
+    font-size: 30px;
     padding-bottom: 15px;
   }
   #section .infolist ul li h3 {
@@ -824,5 +855,14 @@
   }
   #section .infolist ul li.on h3 {
     color: #b6241a;
+  }
+
+  #footer span {
+    word-break: keep-all;
+    font-size: 10px;
+    line-height: 15px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
   }
 }
