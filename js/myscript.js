@@ -69,6 +69,15 @@ $(".event").slick({
   ],
 });
 
+$(".popul1").slick({
+  autoplay: true,
+  autoplaySpeed: 4000,
+  prevArrow:
+    '<button class="slick-prev slick-arrow" aria-label="previous" type="button"><i class="fa-solid fa-chevron-left"></button>',
+  nextArrow:
+    '<button class="slick-next slick-arrow" aria-label="Next" type="button"><i class="fa-solid fa-chevron-right"></i></button>',
+});
+
 //header 오버 영역
 $("#header h1 a").on("mouseover mouseout", function () {
   if ($("html").hasClass("pc")) {
@@ -82,15 +91,14 @@ $("#header ul li").on("mouseover mouseout", function () {
   }
 });
 $("#section .row .agebox").on("mouseover mouseout", function () {
-    $(this).toggleClass("on");
+  $(this).toggleClass("on");
 });
 
-$(".nav .depth1 > li").on("mouseover mouseout",function(){
-  if($("html").hasClass("pc")){
-    $(this).toggleClass("on")
+$(".nav .depth1 > li").on("mouseover mouseout", function () {
+  if ($("html").hasClass("pc")) {
+    $(this).toggleClass("on");
   }
-})
-
+});
 
 $(".nav .depth1 li > a").on("mouseover mouseout", function () {
   if ($("html").hasClass("pc")) {
@@ -105,10 +113,9 @@ $(".nav .depth1 > li").on("click", function () {
   }
 });
 
-$(".nav .depth1 > li > a").on("click",function(){
-  if($("html").hasClass("mobile")){
+$(".nav .depth1 > li > a").on("click", function () {
+  if ($("html").hasClass("mobile")) {
     $(this).stop().toggleClass("on");
-    
   }
 });
 $(".nav .depth1 > li").on("mouseover mouseout", function () {
@@ -132,8 +139,18 @@ $("#section ul li").on("mouseover mouseout", function () {
     $(this).toggleClass("on");
   }
 });
+$("#section ul li").on("click", function () {
+  if ($("html").hasClass("mobile")) {
+    $(this).toggleClass("on");
+  }
+});
 $("#section .cgv .movie").on("mouseover mouseout", function () {
   if ($("html").hasClass("pc")) {
+    $(this).toggleClass("on");
+  }
+});
+$("#section .cgv .movie").on("click ", function () {
+  if ($("html").hasClass("mobile")) {
     $(this).toggleClass("on");
   }
 });
@@ -153,13 +170,11 @@ $("#section .event li a dem").on("mouseover mouseout", function () {
   }
 });
 
-$("#section .infolist > ul > li").on("mouseover mouseout", function () {
-  if ($("html").hasClass("pc")) {
-    $(this).toggleClass("on");
-  }
-});
-$("#section .infolist > ul > li").on("mouseover mouseout", function () {
-  if ($("html").hasClass("mobile")) {
-    $(this).toggleClass("on");
-  }
-});
+// $("#section .infolist > ul > li").on("mouseover mouseout", function () {
+//   $(this).toggleClass("on");
+// });
+// $("#section .infolist > ul > li").on("mouseover mouseout", function () {
+//   if ($("html").hasClass("mobile")) {
+//     $(this).toggleClass("on");
+//   }
+// });
